@@ -1,0 +1,172 @@
+.header {
+	padding: 40px 0;
+	min-height: 695px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--header-bg);
+	background-image: url('./../../img/header-bg.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center center;
+
+	color: var(--header-text);
+	text-align: center;
+}
+
+.ava {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+}
+
+.header__wrapper {
+	padding: 0 15px;
+	/* max-width: 660px; */
+}
+
+.header__title {
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 0.85;
+}
+
+.text {
+	overflow: hidden;
+	border-right: 3px solid white;
+	white-space: nowrap;
+	font-size: 60px;
+	color: white;
+	font-weight: bold;
+	animation: typing 1.5s steps(21, end), blink-caret 0.8s step-end infinite;
+}
+
+.header__title strong {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.header__title em {
+	font-style: normal;
+	color: var(--accent);
+}
+
+.header__text {
+	margin-bottom: 40px;
+	font-size: 18px;
+	line-height: 1.333;
+}
+
+.header__text p+p {
+	margin-top: 0.5em;
+}
+
+@media (max-width: 1024px) {
+	.text {
+		font-size: 30px;
+		animation: typing-small 1.5s steps(21, end), blink-caret 0.8s step-end infinite;
+		max-width: 420px;
+	}
+	.header__title{
+		font-size: 25px;
+	}
+	.img{
+		max-width: 250px;
+	}
+	.ava{
+		margin-bottom: -90px;
+	}
+	.header{
+		min-height: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.text {
+		font-size: 30px;
+		animation: typing-small 1.5s steps(21, end), blink-caret 0.8s step-end infinite;
+		max-width: 420px;
+	}
+	.header__title{
+		font-size: 25px;
+	}
+	.img{
+		max-width: 250px;
+	}
+	.ava{
+		margin-bottom: -90px;
+	}
+	.header{
+		min-height: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.text {
+		font-size: 35px;
+		animation: typing-small 1.5s steps(21, end), blink-caret 0.8s step-end infinite;
+		max-width: 420px;
+	}
+	.header__title{
+		font-size: 30px;
+	}
+	.img{
+		max-width: 300px;
+	}
+	.ava{
+		margin-bottom: -30px;
+	}
+}
+
+/* Анимация для больших экранов */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* Анимация для маленьких экранов */
+@keyframes typing-small {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
+}
+
+@media (max-width: 400px) {
+	.text {
+		font-size: 30px;
+		animation: typing-small 1.5s steps(21, end), blink-caret 0.8s step-end infinite;
+		max-width: 420px;
+	}
+	.header__title{
+		font-size: 25px;
+	}
+	.img{
+		max-width: 250px;
+	}
+	.ava{
+		margin-bottom: -90px;
+	}
+	.header{
+		min-height: 0;
+	}
+}
